@@ -1,4 +1,4 @@
-LD /100
+LD N
 JZ /032
 SC /040
 SC /010
@@ -31,12 +31,11 @@ SB /104
 JZ /032
 RS /040
 LD /106
-MM /102
+MM RES
 RS /010
 
 @ /0100
-K /0005
-K /0000
-K /0001
-K /0000
-K /0000
+N       K  /0005    ; Valor de entrada para calcular fatorial (N = 5)
+RES     K  /0000    ; Armazena o resultado do fatorial
+UM      K  /0001    ; Constante 1 para decremento
+TEMP    K  /0000    ; Variável temporária
