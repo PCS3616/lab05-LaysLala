@@ -1,30 +1,47 @@
-        LD  N        ; Carrega N
-        JZ  FIM      
-        SC  FATORIAL      
-        SC  SAIDA    
-        HM          
 
-FIM     JP  /000     
+@ /0000 ; Especificar que começa no zero o endereço
+LD /100 ; carregar N
+JZ /032 ; Pular para 0032 se for zero
+SC /040 ; subrotina para checar se é 1
 
-FATORIAL     LD  N        
-        MM  AUX     
-        LD  N        
-        SB  UM       
-        MM  N        
-        JZ  BASE     
-        LD  AUX     
-        ML  N        
-        MM  AUX    
-        JP  FATORIAL 
+@ /0006 ; Especificar o endereço para a instrução
+SC /010 ; Subrotina para fatorial com N diferente de 1 e zero
+HM /060 ; Parou a máquina
 
-BASE    LD  AUX     
-        MM  RESULTADO      
-        RS  FATORIAL      
+@ /0010 ; Especificando endereço
+JP /000
+LD /100
+MM /106
+LD /100
+SB /104
+MM /100
+JZ /050
+LD /106
+ML /100
+MM /106
+JP /016
 
-SAIDA   JP  /000     
+@ /0032
+LD /104
+MM /102
+HM /016
+
+@ /0040
+JP /000
+LD /100
+MM /108
+LD /108
+SB /104
+
+JZ /032
+RS /040
+LD /106
+MM /102
+RS /010
 
 @ /0100
-N            K  /0005    
-RESULTAO     K  /0000   
-UM           K  /0001   
-AUX          K  /0000    
+K /0005
+K /0000
+K /0001
+K /0000
+K /0000
