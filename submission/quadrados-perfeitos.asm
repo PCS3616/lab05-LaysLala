@@ -23,6 +23,7 @@ LD /092 ; chama o resultado
 ATUALIZADOR_MEMORIA MM /102 ; meu ponteiro
 LD ATUALIZADOR_MEMORIA
 AD /08E ; incrementa a memoria de dois em dois
+MM ATUALIZADOR_MEMORIA
 LD /094 ; auxiliar dos "n's"
 AD /090 ; incrementa o auxiliar
 MM /094
