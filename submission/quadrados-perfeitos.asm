@@ -24,6 +24,8 @@ ATUALIZADOR MM /102 ; meu ponteiro
 LD ATUALIZADOR
 AD /08E ; incrementa a memoria de dois em dois
 MM ATUALIZADOR
+LD /098 ; load para não dar merda
+MM /092 ; setado em zero novamente
 LD /094 ; auxiliar dos "n's"
 AD /090 ; incrementa o auxiliar
 MM /094
@@ -43,6 +45,7 @@ K /0001 ; constante para acréscimo ou decréscimo
 K /0000 ; auxiliar de resultado
 K /0001 ; auxiliar do auxiliar do "n"
 K /003F ; constante de parada
+K /0000 ; constante zero para não dar merda
 
 @ /0100
 K /0000
