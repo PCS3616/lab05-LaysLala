@@ -26,6 +26,7 @@ AD /08E ; incrementa a memoria de dois em dois
 MM ATUALIZADOR
 LD /098 ; load para não dar merda
 MM /092 ; setado em zero novamente
+MM /08A ; setar i no zero para não dar merda
 LD /094 ; auxiliar dos "n's"
 AD /090 ; incrementa o auxiliar
 MM /094
