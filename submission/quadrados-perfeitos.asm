@@ -20,10 +20,10 @@ JP /010 ; volta ao "loop"
 
 @ /0050
 LD /092 ; chama o resultado
-ATUALIZADOR_MEMORIA MM /102 ; meu ponteiro
-LD ATUALIZADOR_MEMORIA
+ATUALIZADOR MM /102 ; meu ponteiro
+LD ATUALIZADOR
 AD /08E ; incrementa a memoria de dois em dois
-MM ATUALIZADOR_MEMORIA
+MM ATUALIZADOR
 LD /094 ; auxiliar dos "n's"
 AD /090 ; incrementa o auxiliar
 MM /094
@@ -42,7 +42,7 @@ K /0002 ; constante para a multiplicação
 K /0001 ; constante para acréscimo ou decréscimo
 K /0000 ; auxiliar de resultado
 K /0001 ; auxiliar do auxiliar do "n"
-K /001F ; constante de parada
+K /003F ; constante de parada
 
 @ /0100
 K /0000
