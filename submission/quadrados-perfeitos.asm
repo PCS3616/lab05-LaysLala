@@ -45,7 +45,7 @@ K /0002 ; constante para a multiplicação
 K /0001 ; constante para acréscimo ou decréscimo
 K /0000 ; auxiliar de resultado
 K /0001 ; auxiliar do auxiliar do "n"
-K /003F ; constante de parada
+K /0040 ; constante de parada
 K /0000 ; constante zero para não dar merda
 
 @ /0100
