@@ -20,7 +20,7 @@ JP /010 ; volta ao "loop"
 
 @ /0050
 LD /092 ; chama o resultado
-ATUALIZADOR MM /102 ; meu ponteiro
+ATUALIZADOR MM /100 ; meu ponteiro
 LD ATUALIZADOR
 AD /08E ; incrementa a memoria de dois em dois
 MM ATUALIZADOR
