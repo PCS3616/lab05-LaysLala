@@ -20,7 +20,7 @@ JP /010 ; volta ao "loop"
 
 @ /0050
 LD /092 ; chama o resultado
-ATUALIZADOR MM /100 ; meu ponteiro
+ATUALIZADOR MM /102 ; meu ponteiro
 LD ATUALIZADOR
 AD /08E ; incrementa a memoria de dois em dois
 MM ATUALIZADOR
@@ -30,7 +30,7 @@ MM /094
 MM /08C
 SB /096 ; vai contar até o 63 e daí parar
 JZ /070
-JP /00E
+JP /010
 
 @ /0070
 RS /00E
