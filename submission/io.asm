@@ -1,6 +1,7 @@
 @ /0000
-SC /020 ; subrotina de leitura dos dois primeiros dígitos
-SC /030 ; subrotina de leitura dos espaços
+SC /010 ; subrotina de leitura dos dois primeiros dígitos
+SC /020 ; subrotina de leitura dos espaços
+SC /030 ; subrotina de leitura dos dois últimos dígitos
 SC /040 ; subrotina de operação de soma
 HM /06A ; Parou
 
